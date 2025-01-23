@@ -1,3 +1,6 @@
+.visual .img-default{
+    border-radius: 8px;
+}
 .project-container {
     display:flex; 
     flex-wrap: nowrap; 
@@ -10,6 +13,17 @@
     width: 55%;
     background-color: #f5f2f0;
     border-radius: 16px 16px 0px 0px;
+}
+
+.project-code-container>div.code-image-container{
+    height: 100%;
+}
+
+.project-code-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
 }
 
 .type-2.project-container .project-result-container{
@@ -31,6 +45,14 @@
     width: 100%; 
     height: 100%;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.project-result-container img{
+    width: 100%;
+}
+
+.project-result-container .result-inner-container, .project-result-container .result-inner-container>div.result-image-container, .project-result-container .result-inner-container>div.result-image-container img{
+    height: 100%;
 }
 
 .code-container-header{

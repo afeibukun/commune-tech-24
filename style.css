@@ -86,7 +86,7 @@
 	}
 	.banner .text{
 		float: left;
-		width: 30%;
+		width: 45%;
 		font-family: var(--default);
 	}
 	.banner .text h1{
@@ -107,7 +107,7 @@
 	}
 	.banner .visual{
 		float: right;
-		width: 58%;
+		width: 45%;
 	}
 
 
