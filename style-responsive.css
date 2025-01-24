@@ -70,8 +70,8 @@
 	.banner .visual{
 		/* float: none; */
 		display: table;
-		width: 500px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 500px;
 		margin: 0 auto 50px auto;
 	}
 	.banner .text{
