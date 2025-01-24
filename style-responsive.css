@@ -68,14 +68,14 @@
 		padding: 130px 0 70px 0;
 	}
 	.banner .visual{
-		float: none;
+		/* float: none; */
 		display: table;
 		width: 500px;
 		max-width: 100%;
 		margin: 0 auto 50px auto;
 	}
 	.banner .text{
-		float: left;
+		/* float: left; */
 		width: 100%;
 	}
 	.banner .text h1{

@@ -1,6 +1,20 @@
 .visual .img-default{
     border-radius: 8px;
 }
+.banner-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+@media(max-width:1280px){
+    .banner-content{
+        flex-direction: column;
+    }
+}
+
+
+
+
 .project-container {
     display:flex; 
     flex-wrap: nowrap; 
@@ -8,53 +22,43 @@
     align-items: stretch;
     overflow: hidden;
 }
-
 .project-code-container{
     width: 55%;
     background-color: #f5f2f0;
     border-radius: 16px 16px 0px 0px;
 }
-
 .project-code-container>div.code-image-container{
     height: 100%;
 }
-
 .project-code-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 0%;
 }
-
 .type-2.project-container .project-result-container{
     width: 50%;
     height: 500px;
 }
-
 .project-result-container{
     width: 45%;
 }
-
 .result-inner-container{
     padding: 8px 0px; 
     height: 100%; 
     box-sizing:border-box;
 }
-
 .result-embed{
     width: 100%; 
     height: 100%;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 .project-result-container img{
     width: 100%;
 }
-
 .project-result-container .result-inner-container, .project-result-container .result-inner-container>div.result-image-container, .project-result-container .result-inner-container>div.result-image-container img{
     height: 100%;
 }
-
 .code-container-header{
     background-color: antiquewhite;
     padding: 16px 8px;
@@ -64,10 +68,11 @@
 }
 
 
+
+
 .type-2.project-container .result-container-header{
     background-color: rgb(48, 48, 48)
 }
-
 .result-container-header{
     background-color: darkslategray;
     padding: 16px 8px;
@@ -75,12 +80,10 @@
     display: flex;
     gap:32px;
 }
-
 .code-container-header .menu-button-group, .result-container-header .menu-button-group{
     display: flex;
     gap: 8px
 }
-
 .code-container-header .menu-button-group a, .result-container-header .menu-button-group a{
     width: 16px;
     height: 16px;
@@ -88,51 +91,46 @@
     background-color: #57a0ff;
     border-radius: 100%;
 }
-
 .code-container-header .menu-button-group a.red, .result-container-header .menu-button-group a.red{
     background-color: #ff5f57;
 }
 .code-container-header .menu-button-group a.yellow, .result-container-header .menu-button-group a.yellow{
     background-color: #febc2e;
 }
-
 .code-container-header .menu-button-group a.green, .result-container-header .menu-button-group a.green{
     background-color: #28c840;
 }
-
 .code-container-header .header-title h4{
     color:#393a39
 }
-
 .result-container-header .header-title h4{
     color:#c1d6c1
 }
+
+
+
 
 .image-project-row{
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
 }
-
 .image-project-row > div{
     width:25%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
 }
-
 .image-project-row > div:after{
     content: "";
     display: block;
     padding-bottom: 100%;
 }
-
 .image-project-row > div a{
     display: inline-block;
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .image-project-row > div img{
     width:100%;
     height: 100%;
@@ -140,10 +138,16 @@
     object-position: top;
 }
 
+
+
+
 footer .contact-info>ul{
     display:flex; 
     gap:16px;
 }
+
+
+
 
 @media(max-width:540px){
     .project-container{
@@ -157,7 +161,6 @@ footer .contact-info>ul{
         width: 100%;
         height: 480px;
     }
-
     .project-container.type-2{
         gap:48px;
     }
@@ -165,10 +168,16 @@ footer .contact-info>ul{
         width: 100%;
     }
 
+
+
+
     .image-project-row > div{
         width:50%;
         aspect-ratio: 1/1;
     }
+
+
+
 
     footer .contact-info{
         padding-left: 32px;
@@ -181,6 +190,8 @@ footer .contact-info>ul{
 }
 
 
+
+
 /** Modal CSS **/
 /* Style the Image Used to Trigger the Modal */
 #myImg, .project-image {
@@ -188,9 +199,7 @@ footer .contact-info>ul{
     cursor: pointer;
     transition: 0.3s;
   }
-  
   #myImg:hover, .project-image:hover {opacity: 0.7;}
-  
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -205,7 +214,6 @@ footer .contact-info>ul{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
-  
   /* Modal Content (Image) */
   .modal-content {
     margin: auto;
@@ -213,7 +221,6 @@ footer .contact-info>ul{
     width: 80%;
     max-width: 700px;
   }
-  
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
     margin: auto;
@@ -225,18 +232,22 @@ footer .contact-info>ul{
     padding: 10px 0;
     height: 150px;
   }
-  
   /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
   
+
+
   @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
   }
   
+
+
+
   /* The Close Button */
   .close {
     position: absolute;
@@ -247,7 +258,6 @@ footer .contact-info>ul{
     font-weight: bold;
     transition: 0.3s;
   }
-  
   .close:hover,
   .close:focus {
     color: #bbb;
@@ -255,6 +265,9 @@ footer .contact-info>ul{
     cursor: pointer;
   }
   
+
+
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {

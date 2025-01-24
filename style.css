@@ -79,13 +79,13 @@
 
 
 	.banner{
-		float: left;
+		/* float: left; */
 		width: 100%;
 		background: #424242;
 		padding: 200px 0 100px 0;
 	}
 	.banner .text{
-		float: left;
+		/* float: left; */
 		width: 45%;
 		font-family: var(--default);
 	}
@@ -106,7 +106,7 @@
 		font-style: italic;
 	}
 	.banner .visual{
-		float: right;
+		/* float: right; */
 		width: 45%;
 	}
 
