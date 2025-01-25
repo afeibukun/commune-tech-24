@@ -69,7 +69,8 @@
 	}
 	.banner .visual{
 		/* float: none; */
-		display: table;
+		/* display: table; */
+		display: block;
 		width: 100%;
 		max-width: 500px;
 		margin: 0 auto 50px auto;
@@ -93,8 +94,8 @@
 	.about{
 		padding: 60px 0;
 	}
-	.about .text{
-	}
+	/* .about .text{
+	} */
 	.about .text h2{
 		width: 100%;
 		font-size: 48px;
